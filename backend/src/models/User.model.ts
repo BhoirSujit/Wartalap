@@ -13,10 +13,10 @@ const UserSchema = new Schema({
         type: String,
         required: true,
     },
-    gender: {
-        type: String
-    },
 
+
+}, {
+    timestamps: true,
 });
 
 const UserModel = model('users', UserSchema);
